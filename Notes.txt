@@ -1,0 +1,47 @@
+1.Disturbuted System .
+2.Design Pattern.------ Design problem " Publisher Suscriber Model".
+3. Live Streaming system 
+
+@Requirement for a Live Streaming Application :
+1.Streaming Video.
+2.Processing Video.
+3.Braodcasting.
+4.Failproof.
+5.Advertisement. 
+6.Reaction .
+7.Disclaimers/News Flasher .
+8.Degradation of videa quality. 
+9.Multiple Device Support.
+
+Simple Diagfram for the required system ::
+
+
+                               ---API---                                      ---API---
+(Customer)----------------------------{Server}-------------------------[Database]
+
+ 
+4. Network Protocal use in the system is HTTP which is a stateless protocal and we can     also use a protocal that only used for Streaming video named as "RTMP Proctocal" or "WEBRTC".
+
+5. WHich database solution should used ?
+Ans: We can use file system insated of database , HDTS or Amazon S3.
+
+6. Entire Raw video should be converted to different resolution.?
+                      
+7. Content Delivery Network.?How does HTTP-Dash work Internelly?
+
+@Important things to notice ::
+1. Define the requirement as abstract concept(Object).
+2. Object can be manipulated and queried using API's on server.
+3. Data representation need to be in databases.
+
+@What are the action that a user can perform? (Low Level Design)
+-Timestamp [X]
+-Pause the video/Last seek point.
+- Adaptive video quality.
+- Last Watch seek position.
+
+@Things to be consider for the videa streaming app.
+-Memort Optimization.
+-User Behaviour.
+-API Calling.
+
